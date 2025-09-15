@@ -14,5 +14,6 @@ public class linkedListCollections {
         l1.removeFirst();
         l1.removeLast();
         System.out.println(l1);
+        System.out.println(l1.size());
     }
 }

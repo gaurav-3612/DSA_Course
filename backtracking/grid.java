@@ -21,3 +21,46 @@ public class grid {
         System.out.println(gridways(0, 0, n, m));
     }
 }
+/*
+ gridways(0,0)
+├── gridways(1,0)
+│   ├── gridways(2,0)
+│   │   ├── gridways(3,0) = 0   (out of bounds)
+│   │   └── gridways(2,1)
+│   │       ├── gridways(3,1) = 0   (out of bounds)
+│   │       └── gridways(2,2) = 1   (destination)
+│   │       => 1
+│   │   => 1
+│   └── gridways(1,1)
+│       ├── gridways(2,1)
+│       │   ├── gridways(3,1) = 0
+│       │   └── gridways(2,2) = 1
+│       │   => 1
+│       └── gridways(1,2)
+│           ├── gridways(2,2) = 1
+│           └── gridways(1,3) = 0
+│           => 1
+│       => 2
+│   => 3
+└── gridways(0,1)
+    ├── gridways(1,1)
+    │   ├── gridways(2,1)
+    │   │   ├── gridways(3,1) = 0
+    │   │   └── gridways(2,2) = 1
+    │   │   => 1
+    │   └── gridways(1,2)
+    │       ├── gridways(2,2) = 1
+    │       └── gridways(1,3) = 0
+    │       => 1
+    │   => 2
+    └── gridways(0,2)
+        ├── gridways(1,2)
+        │   ├── gridways(2,2) = 1
+        │   └── gridways(1,3) = 0
+        │   => 1
+        └── gridways(0,3) = 0   (out of bounds)
+        => 1
+    => 3
+=> 6
+
+ */

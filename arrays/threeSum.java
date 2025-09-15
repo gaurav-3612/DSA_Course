@@ -18,7 +18,7 @@ public class threeSum {
                 continue;
             }
 
-            int left = i + 1;  // Step 3: Left pointer
+            int left = i + 1;  // Step 3: Left pointer  // already moving pointer
             int right = n - 1; // Step 3: Right pointer
 
             while (left < right) {

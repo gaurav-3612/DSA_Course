@@ -53,11 +53,8 @@ public class linkedList {
  */
 
 // -----------------------------------------------------------------------------------------------------------------------------
- 
 /*Problem With static Head & Tail
-java
-Copy
-Edit
+
 linkedList l1 = new linkedList();
 linkedList l2 = new linkedList();
 

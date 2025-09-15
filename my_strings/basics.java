@@ -25,3 +25,5 @@ public class basics {
         System.out.println("hello");
     }
 }
+
+// for converting integer to char use (char)(digit+'0')

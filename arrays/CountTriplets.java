@@ -26,7 +26,7 @@ class Solution {
 
             // Step 3: Use two pointers to find valid triplets with arr[i] as the first element
             while (left < right) {
-                long total = arr[i] + arr[left] + arr[right]; // Current triplet sum
+                long total = arrr[i] + arr[left] + arr[right]; // Current triplet sum
 
                 if (total < sum) {
                     // If sum of triplet is less than given sum,
