@@ -99,7 +99,7 @@ public class linkedList3 {
 
         // making two halves
         Node left = head;
-        Node right = mid.next;
+        Node right = mid.next; // it is necessary to store mid.next in right because after then we are making it null
         mid.next = null;
 
         left = MergeSort(left);
@@ -181,3 +181,22 @@ public class linkedList3 {
         l1.print();
     }
 }
+
+// deleting a node without knowing its head---->
+// class Node
+// {
+//     int data ;
+//     Node next;
+//     Node(int d)
+//     {
+//         data = d;
+//         next = null;
+//     }
+// }
+// 
+// class Solution {
+//     public void deleteNode(Node del_node) {
+//         del_node.data=del_node.next.data;
+//         del_node.next=del_node.next.next;
+//     }
+// }

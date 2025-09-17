@@ -39,8 +39,8 @@ because you are trying to access .next of null
     // removing cycle
     public static void RemoveCycle() {
         // detecting cycle
-        Node fast = head;
         Node slow = head;
+        Node fast = head;
         int flag = 0;
 
         while (fast != null && fast.next != null) {
