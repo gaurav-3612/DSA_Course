@@ -51,12 +51,19 @@ because you are trying to access .next of null
                 break;
             }
         }
+        if (slow == head) {
+            while (fast.next != slow) { // move fast until it’s the last node in cycle
+                fast = fast.next;
+            }
+            fast.next = null; // break loop by making last node point to null
+            return;
+        }
         // putting slow to head and again starting by +1 by both fast and slow
         if (flag == 1) {
             slow = head;
             Node prev = null;
             while (fast != slow) {
-                prev = fast;
+                prev = fast; // it is necessary to write it here to remain previous of head
                 slow = slow.next;
                 fast = fast.next;
             }
