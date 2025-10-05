@@ -53,6 +53,7 @@ public class deletingNode {
                 return root.right;
             } else if (root.right == null) {
                 return root.left;
+                // case 3
             } else {
                 Node IS = findInorderSuccessor(root.right);
                 root.data = IS.data;

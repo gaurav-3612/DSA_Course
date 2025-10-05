@@ -17,7 +17,7 @@ public class DuplicateBrackets {
                     s.pop();
                     count++;
                 }
-                if (count == 0) {
+                if (count <= 1) {// having bracket in along sigle number is also redundant like (5)+6
                     return true; // duplicatae exist
                 } else {
                     s.pop();    // removing the opening pair

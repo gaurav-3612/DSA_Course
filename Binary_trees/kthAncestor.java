@@ -29,7 +29,7 @@ public class kthAncestor {
         }
         int max = Math.max(left, right);
         if ((max + 1) == k) {
-            System.out.println(root.data); // ouer main work done here
+            System.out.println(root.data); // our main work done here
         }
         return max + 1; // function will continue but work already done it is of formality of int return data type
     }

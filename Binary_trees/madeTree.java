@@ -15,7 +15,7 @@ public class madeTree {
         }
     }
 
-    static class BinaryTree {
+    static class BinaryTree {  // o(n)
 
         static int idx = -1; // to use it in BuildTree function we have to make it static variable
 

@@ -35,8 +35,8 @@ public class ancestor {
 
     public static boolean getPath(Node root, int n, ArrayList path) {
         // if we only have to add elements in the arraylist then we can use void function type but atlast we also need
-        //  to remove if we find that we come out of recursive funcyion by null base case then it is the wrong path and
-        //  we need to remove all eelements that are addded in the arraylist
+        //  to remove if we find that we come out of recursive function by null base case then it is the wrong path and
+        //  we need to remove all elements that are added in the arraylist
         if (root == null) {
             return false;
         }

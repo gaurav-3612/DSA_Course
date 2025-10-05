@@ -29,7 +29,7 @@ public class topView {
     }
 
     public static void topView(Node root) {
-        Queue<Info> q = new LinkedList<>(); // this is used to traverse in bfd manner
+        Queue<Info> q = new LinkedList<>(); // this is used to traverse in bfs manner
         // ❌ With ArrayDeque: Throws NullPointerException immediately when adding null
         HashMap<Integer, Node> h = new HashMap<>();
         int min = 0, max = 0;

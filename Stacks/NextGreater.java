@@ -1,4 +1,5 @@
 package Stacks;
+// VERY IMPORTANT CAN HAVE MANY VARITIES-------------TOPIC NAME CALLED: MONOTONIC STACKS---------------------------
 
 import java.util.*;
 
@@ -30,3 +31,32 @@ public class NextGreater {
     // next smaller to right 
     // next smaller to left
 }
+/*
+ --------WHAT IF THE ARRAY GIVEN IS CIRCULAR----------
+ EXAMPLE: [1,2,1]
+ No circular output: [2,-1,-1]
+ Circular Output: [2,-1,2]
+ SO WE NEED TO TRAVERSE ARRAY TWICE MEANS i=2*n-1 and idx=i%n
+
+ class Solution {
+    public int[] nextGreaterElements(int[] nums) {
+        int n=nums.length;
+        int ans[]=new int[n];
+        ArrayDeque<Integer> st=new ArrayDeque<>();
+        for(int i=0;i<n;i++){
+            ans[i]=-1;
+        }
+        for(int i=n*2-1;i>=0;i--){
+            int idx=i%n;
+            while(!st.isEmpty()&&nums[idx]>=nums[st.peek()]){
+                st.pop();
+            }
+            if(!st.isEmpty()){
+                ans[idx]=nums[st.peek()];
+            }
+            st.push(idx);
+        }
+        return ans;
+    }
+}
+ */

@@ -38,16 +38,17 @@ public class levelorder {
             }
             Queue<Node> q = new LinkedList<>(); // we made queue of data type Node and not of Integer
             q.add(root);
-            q.add(null);
+            // q.add(null);
             while (!q.isEmpty()) {
                 Node curr = q.remove();
                 if (curr == null) {
                     if (q.isEmpty()) {
                         break;
-                    } else {
-                        System.out.println();
-                        q.add(null);
                     }
+                    //  else {
+                    //     System.out.println();
+                    //     q.add(null);
+                    // }
                 } else {
                     System.out.print(curr.data);
                     if (curr.left != null) {

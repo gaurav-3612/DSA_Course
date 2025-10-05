@@ -39,7 +39,6 @@ public class BST {
     }
 
     /*
-    
         5
       /   \
      1     7

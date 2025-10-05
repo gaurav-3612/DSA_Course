@@ -39,13 +39,14 @@ public class subtree {
             // is nothing then subroot.left ot right will give null point exception error
             return false;
         }
-        if (!isIdentical(root.left, subroot.left)) { // we can also directly call isIdentical recursively but here we are dealing
-            return false;                       // the all false cases and return true atlast so if we do not wrute this conditon
-        }                                       //then we always get true as at last return is true this return false going below
-        if (!isIdentical(root.right, subroot.right)) {
-            return false;
-        }
-        return true;
+        // if (!isIdentical(root.left, subroot.left)) { // we can also directly call isIdentical recursively but here we are dealing
+        //     return false;                       // the all false cases and return true atlast so if we do not wrute this conditon
+        // }                                       //then we always get true as at last return is true this return false going below
+        // if (!isIdentical(root.right, subroot.right)) {
+        //     return false;
+        // }
+        // return true;
+        return (isIdentical(root.left, subroot.left) && isIdentical(root.right, subroot.right));
     }
 
     public static void main(String[] args) {

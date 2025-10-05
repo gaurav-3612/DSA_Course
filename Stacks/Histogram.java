@@ -51,5 +51,5 @@ public class Histogram {
 /*
  * error--
  * 1) properly copy paste nsr and nsl and also make required changes not entirely copy
- * 2) store indexes not athe actual values in the nsl,nsr,and stacks
+ * 2) store indexes not the actual values in the nsl,nsr,and stacks
  */
