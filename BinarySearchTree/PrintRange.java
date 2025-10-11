@@ -44,7 +44,7 @@ public class PrintRange {
         }
         if (root.data >= k1 && root.data <= k2) {
             Print(root.left, k1, k2);
-            System.out.print(root.data + " ");
+            System.out.print(root.data + " "); // write print statement in thr middle becauuse inorder is sorted for bst
             Print(root.right, k1, k2);
         } else if (root.data <= k1) {
             Print(root.right, k1, k2); // here we do not write any print statement because after going to root.right then

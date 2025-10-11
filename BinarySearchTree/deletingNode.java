@@ -82,3 +82,93 @@ public class deletingNode {
         InOrder(root);
     }
 }
+/*
+ 🌳 BST Deletion – Summary Notes
+1. BST Basics
+
+Left subtree → smaller values
+
+Right subtree → larger values
+
+Inorder traversal → sorted order
+
+2. Cases in Node Deletion
+Case 1: No Children (Leaf Node)
+
+Simply delete the node (return null).
+
+Case 2: One Child
+
+Replace node with its single child.
+
+Case 3: Two Children
+
+Node has both left & right child.
+
+Replace node’s value with:
+
+Inorder Successor = minimum value in right subtree, or
+
+Inorder Predecessor = maximum value in left subtree
+
+Then, delete that successor/predecessor node.
+
+3. Why Use Minimum in Right Subtree
+
+It’s the next greater value than the current node.
+
+Keeps BST property:
+
+left < root < right
+
+
+Easy to find → go right once, then all the way left.
+
+Guarantees valid BST after replacement.
+
+4. findInorderSuccessor()
+while (root.left != null) {
+    root = root.left;
+}
+return root;
+
+
+Finds smallest node in right subtree.
+
+5. Time Complexity
+
+Search/Delete: O(h) (h = height of tree)
+
+Balanced BST → O(log n)
+
+Skewed BST → O(n)
+
+6. Example
+
+Delete 3 from:
+
+     5
+   /   \
+  3     7
+ / \
+2   4
+
+
+Steps:
+
+Node 3 has 2 children
+
+Find inorder successor → 4
+
+Replace 3 with 4
+
+Delete 4 from right subtree
+
+Result:
+
+     5
+   /   \
+  4     7
+ /
+2
+ */

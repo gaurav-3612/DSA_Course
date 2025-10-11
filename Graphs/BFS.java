@@ -55,8 +55,8 @@ public class BFS {
     }
 
     public static void BFSAlgo(ArrayList<Edge> graph[]) {   // o(v+e) and if we use adjency matrix then it will be o(v2)
-        Queue<Integer> q = new LinkedList<>();
-        boolean visit[] = new boolean[graph.length];
+        Queue<Integer> q = new LinkedList<>(); // will add dist in the queue
+        boolean visit[] = new boolean[graph.length]; // will mark if the node id visited or not
         q.add(0);   // added source
         while (!q.isEmpty()) {
             int curr = q.remove();

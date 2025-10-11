@@ -1,14 +1,11 @@
 package Graphs;
 
-import Stacks.StacksByAl.stack;
-
 import java.util.*;
 
 public class TopologicalSorting {
 
     /*
-    
-     5 → 0
+5 → 0
 ↓
 2 → 3 → 1
 ↑    ↑
@@ -124,4 +121,8 @@ Neighbor: 0 (visited) → skip
 Neighbor: 2 (visited) → skip
 
 Push 5 → stack = [0, 1, 3, 2, 4, 5]
+ */
+
+ /*
+  
  */
